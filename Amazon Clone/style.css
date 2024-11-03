@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+
+body{
+    background: #dadada;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Nav - Bar :d*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #131921;
+    padding: .6rem 1.25rem;
+    color: #fff;
+}
+.nav-country{
+    display: flex;
+    align-items: end;
+    margin-left: .9rem;
+    font-size: .8rem;
+    color: #c4c4c4;
+}
+
+.nav-country{
+    color: #ffff;
+    font-size: .87rem;
+}
+
+.nav-search{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: white;
+    color: gray;
+    max-width: 62.5rem;
+    border-radius: .25rem;
+    margin-left: .9rem;
+}
+
+.nav-search-category{
+    display: flex;
+    align-items: center;
+    padding: .6rem 1.25rem;
+    gap: .3rem;
+    background: #e5e5e5;
+    border-radius: .25rem 0 0 .25rem;
+}
+
+.nav-search-input{
+    border: none;
+    outline: none;
+    padding-left: 1.25rem;
+    width: 100%;
+}
+
+.nav-search-icon{
+    max-width: 2.5rem;
+    padding: .5rem;
+    background: #ffd64f;
+    border-radius: 0 .25rem .25rem 0;
+}
+
+.nav-language{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 600;
+    margin-left: .9rem;
+}
+
+.nav-text{
+    margin-left: .9rem;
+}
+
+.nav-text p{
+    font-size: .6rem;
+}
+
+.nav-text h1{
+    font-size: .8rem;
+}
+
+.nav-cart{
+    display: flex;
+    align-items: center;
+    margin: 0 .9rem;
+}
+
+/* Nav - Bottom */
+
+.nav-bottom{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: .5rem 1.25rem;
+    background: #232f3e;
+    color: #fff;
+    font-size: .9rem;
+}
+
+.nav-bottom div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.header-slider ul{
+    display: flex;
+    overflow-y: hidden;
+}
+.header-img{
+    max-width: 100%;
+    mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%); /*I am learning new method applications (Useful Method hmm :/)*/ 
+}
+.header-slider a{
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    padding: 5vh 1vw;
+    background: #ffffff4f;
+    color: #0000007b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.control_next{
+    right: 0;
+}
+
+/* Box Rows */
+
+.box-row{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1,25rem;
+    justify-content: space-between;
+    margin: 1.25rem 1.8rem;
+}
+
+.box-col{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    padding: .9rem 1.25rem;
+    background: #fff;
+    max-width: 24%;
+    min-height: 12.5rem;
+    z-index: 1;
+}
+
+.box-col a{
+    font-size: .8rem;
+    color: #0099;
+    font-weight: 500;
+}
+
+.header-box{
+    margin-top: -20vw;
+}
+
+.products-slider{
+    background: #fff;
+    margin: 0 1.8rem;
+    padding: 1.25rem;
+    margin-bottom: .9rem;
+}
+
+.products-slider .products{
+    display: flex;
+    overflow-x: auto;
+    gap: 1.25rem;
+    margin-top: .6rem;
+}
+
+.products-slider .products img{
+    max-width: 12.5rem;
+    max-height: 12.5rem;
+}
+
+.products-slider .products::-webkit-scrollbar{
+    display: none;
+}
+
+.products-slider-with-price{
+    background: #fff;
+    margin: 0 1.8rem;
+    padding: 1.25rem;
+    margin-bottom: .9rem;
+}
+
+.products-slider-with-price .products{
+    display: flex;
+    overflow-x: auto;
+    gap: .6rem;
+    margin-top: .6rem;
+}
+
+.products-slider-with-price .products::-webkit-scrollbar{
+    display: none;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-width: 13.1rem;
+    background: #fbfbfb;
+}
+
+.product-card img{
+    width: 6.8rem;
+    margin: 0 3.1rem;
+}
+
+.product-offer p{
+    background: #be0b3b;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 2px;
+    margin: 8px 0;
+    font-size: .8rem;
+}
+
+.product-price{
+    color: gray;
+    font-size: .8rem;
+}
+
+.product-card h4{
+    color: #525252;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background: #131921;
+    padding: 1.25rem 3.75rem;
+}
